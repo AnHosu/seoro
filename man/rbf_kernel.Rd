@@ -17,7 +17,9 @@ rbf_kernel(x1, x2, l = 1)
 scalar
 }
 \description{
-Radial Basis Function Kernel
+The Radial Basis Function (RBF) kernel on a pair of vectors.
+The RBF kernel is defined as:
+\deqn{ k(x1, x2) = e^( -0.5(||x1 - x2|| / l)^2) }
 }
 \examples{
 rbf_kernel(rnorm(4), rnorm(4, 1, 2), l = 3)

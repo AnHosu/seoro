@@ -1,4 +1,8 @@
 #' Radial Basis Function Kernel
+#' 
+#' The Radial Basis Function (RBF) kernel on a pair of vectors.
+#' The RBF kernel is defined as:
+#' \deqn{ k(x1, x2) = e^( -0.5(||x1 - x2|| / l)^2) }
 #'
 #' @param x1 First numeric vector of length d
 #' @param x2 Second numeric vector of length d
