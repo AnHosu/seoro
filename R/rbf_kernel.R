@@ -7,6 +7,7 @@
 #' @param l Length scale. Scalar or numeric vector of length d.
 #'
 #' @return scalar
+#' @importFrom magrittr `%>%`
 #' @export
 #'
 #' @examples
@@ -15,9 +16,9 @@
 rbf_kernel <- function(l = 1) {
   .exp <- rlang::quo(
     (- 2*(x1 %*% t(x2))) %>%
-      add(rowSums(x1**2, dims = 1)) %>%
+      `+`(rowSums(x1**2, dims = 1)) %>%
       sweep(2, rowSums(x2**2, dims = 1), `+`) %>%
-      multiply_by(-0.5 / l**2) %>%
+      `*`(-0.5 / l**2) %>%
       exp()
   )
   structure(
@@ -26,7 +27,7 @@ rbf_kernel <- function(l = 1) {
       if (is.null(dim(x2))) dim(x2) <- c(1, length(x2))
       rlang::eval_tidy(.exp, data = list(x1 = x1, x2 = x2))
     },
-    .exp = exp,
+    .exp = .exp,
     .quo = rlang::set_names(rlang::quos(!!.exp), "rbf"),
     class = "seoro_kernel"
   )

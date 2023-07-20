@@ -4,13 +4,9 @@
 \alias{rbf_kernel}
 \title{Radial Basis Function Kernel}
 \usage{
-rbf_kernel(x1, x2, l = 1)
+rbf_kernel(l = 1)
 }
 \arguments{
-\item{x1}{First numeric vector of length d}
-
-\item{x2}{Second numeric vector of length d}
-
 \item{l}{Length scale. Scalar or numeric vector of length d.}
 }
 \value{
@@ -22,5 +18,6 @@ The RBF kernel is defined as:
 \deqn{ k(x1, x2) = e^( -0.5(||x1 - x2|| / l)^2) }
 }
 \examples{
-rbf_kernel(rnorm(4), rnorm(4, 1, 2), l = 3)
+k <- rbf_kernel(l = 3)
+k(rnorm(4), rnorm(4, 1, 2))
 }
