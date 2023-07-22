@@ -7,6 +7,7 @@
 #' @param l Length scale. Scalar or numeric vector of length d.
 #'
 #' @return scalar
+#' @include new_kernel.R
 #' @importFrom magrittr `%>%`
 #' @export
 #'

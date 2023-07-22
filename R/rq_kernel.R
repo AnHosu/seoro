@@ -8,6 +8,7 @@
 #' @param alpha mixture parameter, positive scalar
 #'
 #' @return scalar
+#' @include new_kernel.R
 #' @export
 #'
 #' @examples

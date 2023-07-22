@@ -1,3 +1,11 @@
+#' Construct a New Kernel Constructor
+#'
+#' @param expr 
+#' @param name 
+#' @param ... 
+#'
+#' @return function
+#' @export
 new_kernel <- function(expr, name, ...) {
   expr <- rlang::enexpr(expr)
   f <- function(l = 1) {

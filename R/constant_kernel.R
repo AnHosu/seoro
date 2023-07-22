@@ -7,6 +7,7 @@
 #' @param sigma scale parameter, scalar
 #'
 #' @return matrix
+#' @include new_kernel.R
 #' @export
 #'
 #' @examples
