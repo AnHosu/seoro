@@ -16,6 +16,8 @@ Config/testthat/edition: 3
 Collate: 
     'new_kernel.R'
     'constant_kernel.R'
+    'euclidian_distance.R'
+    'exponential_kernel.R'
     'helpers.R'
     'kernel_math.R'
     'rbf_kernel.R'
