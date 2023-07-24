@@ -16,9 +16,7 @@
 #' k(rnorm(4), rnorm(4, 1, 2))
 rbf_kernel <- new_kernel(
   expr = {
-    (- 2*(x1 %*% t(x2))) %>%
-      `+`(rowSums(x1**2, dims = 1)) %>%
-      sweep(2, rowSums(x2**2, dims = 1), `+`) %>%
+    sqdist(x1, x2) %>%
       `*`(-0.5 / l**2) %>%
       exp()
   },
