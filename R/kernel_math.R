@@ -16,6 +16,8 @@
   .exp <- rlang::quo(!!attr(l, ".exp") + !!attr(r, ".exp"))
   structure(
     function(x1, x2) {
+      if (is.null(dim(x1))) dim(x1) <- c(1, length(x1))
+      if (is.null(dim(x2))) dim(x2) <- c(1, length(x2))
       rlang::eval_tidy(.exp, data = list(x1 = x1, x2 = x2))
     },
     .exp = .exp,
@@ -43,6 +45,8 @@
   .exp <- rlang::quo(!!attr(l, ".exp") * !!attr(r, ".exp"))
   structure(
     function(x1, x2) {
+      if (is.null(dim(x1))) dim(x1) <- c(1, length(x1))
+      if (is.null(dim(x2))) dim(x2) <- c(1, length(x2))
       rlang::eval_tidy(.exp, data = list(x1 = x1, x2 = x2))
     },
     .exp = .exp,
