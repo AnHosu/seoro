@@ -7,11 +7,13 @@
 new_kernel(expr, name, ...)
 }
 \arguments{
-\item{expr}{}
+\item{expr}{kernel expression that calculates the covariance matrix given two
+input matrices x1 and x2.}
 
-\item{name}{}
+\item{name}{name of the kernel}
 
-\item{...}{}
+\item{...}{default values for any parameters in the expression. Arguments
+must be named.}
 }
 \value{
 function

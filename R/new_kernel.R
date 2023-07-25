@@ -1,8 +1,10 @@
 #' Construct a New Kernel Constructor
 #'
-#' @param expr 
-#' @param name 
-#' @param ... 
+#' @param expr kernel expression that calculates the covariance matrix given two
+#' input matrices x1 and x2.
+#' @param name name of the kernel
+#' @param ... default values for any parameters in the expression. Arguments
+#' must be named.
 #'
 #' @return function
 #' @export
