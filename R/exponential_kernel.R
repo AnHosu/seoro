@@ -15,13 +15,7 @@
 #' k(rnorm(4), rnorm(4, 1, 2))
 exponential_kernel <- new_kernel(
   expr = {
-    sqdist <- sweep(
-      (- 2 * (x1 %*% t(x2))) + rowSums(x1**2, dims = 1),
-      2,
-      rowSums(x2**2, dims = 1),
-      `+`
-    )
-    exp(-sqrt(sqdist) / l)
+    exp(-sqrt(sqdist(x1, x2)) / l)
   },
   name = "exponential",
   l = 1

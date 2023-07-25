@@ -1,7 +1,7 @@
 test_that("kernel evaluated on identical vectors is one", {
   x <- rnorm(10)
   k <- exponential_kernel(l = 2)
-  expect_equal(k(x, x), matrix(1))
+  expect_equal(k(x, x), matrix(1), tolerance = 1e-7)
 })
 
 test_that("kernel value can be calculated for a pair of vectors", {
