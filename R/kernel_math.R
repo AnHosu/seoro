@@ -1,3 +1,10 @@
+#' Add Two Kernels
+#'
+#' @param l kernel
+#' @param r kernel
+#'
+#' @return kernel
+#' @export
 `+.seoro_kernel` <- function(l, r) {
   # TODO: handle the case of l or r being a scalar
   l_quo <- attr(l, ".quo")
@@ -17,6 +24,13 @@
   )
 }
 
+#' Multiply Two Kernels
+#'
+#' @param l kernel
+#' @param r kernel
+#'
+#' @return kernel
+#' @export
 `*.seoro_kernel` <- function(l, r) {
   # TODO: handle the case of l or r being a scalar
   # TODO: tests
