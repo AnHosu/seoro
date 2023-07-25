@@ -17,7 +17,6 @@ Collate:
     'new_kernel.R'
     'constant_kernel.R'
     'exponential_kernel.R'
-    'helpers.R'
     'kernel_math.R'
     'rbf_kernel.R'
     'rq_kernel.R'
