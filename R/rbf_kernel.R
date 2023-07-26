@@ -8,7 +8,6 @@
 #'
 #' @return scalar
 #' @include new_kernel.R
-#' @importFrom magrittr `%>%`
 #' @export
 #'
 #' @examples
@@ -16,9 +15,7 @@
 #' k(rnorm(4), rnorm(4, 1, 2))
 rbf_kernel <- new_kernel(
   expr = {
-    sqdist(x1, x2) %>%
-      `*`(-0.5 / l**2) %>%
-      exp()
+    exp(-0.5 * sqdist(x1, x2) / l**2)
   },
   name = "rbf",
   l = 1
