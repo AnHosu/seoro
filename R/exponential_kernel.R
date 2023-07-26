@@ -1,12 +1,12 @@
 #' Exponential Kernel
 #' 
-#' The Radial Basis Function (RBF) kernel on a pair of vectors.
-#' The RBF kernel is defined as:
+#' The exponential kernel on a pair of matrices.
+#' The exponential kernel is defined as:
 #' \deqn{ k(x1, x2) = e^( -(||x1 - x2|| / l)) }
 #'
-#' @param l Length scale. Scalar or numeric vector of length d.
+#' @param l Length scale.
 #'
-#' @return scalar
+#' @return matrix
 #' @include new_kernel.R
 #' @export
 #'

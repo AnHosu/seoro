@@ -1,13 +1,13 @@
 #' Rational Quadratic Kernel
 #' 
-#' The Rational Quadratic (RQ) kernel on a pair of vectors.
+#' The Rational Quadratic (RQ) kernel on a pair of matrices.
 #' The RQ kernel is defined as:
 #' \deqn{ k(x1, x2) = (1 + (||x1 - x2||^2 / (2\alpha l^2)))^(-\alpha) }
 #'
-#' @param l Length scale. Scalar or numeric vector of length d.
-#' @param alpha mixture parameter, positive scalar
+#' @param l Length scale.
+#' @param alpha mixture parameter, positive scalar.
 #'
-#' @return scalar
+#' @return matrix
 #' @include new_kernel.R
 #' @export
 #'

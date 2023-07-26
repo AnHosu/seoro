@@ -1,10 +1,10 @@
 #' Constant Kernel
 #' 
-#' The constant aka the white noise kernel on a pair of vectors.
-#' The RBF kernel is defined as:
+#' The constant aka the white noise kernel on a pair of matrices.
+#' The constant kernel is defined as:
 #' \deqn{ \sigma^2 }
 #'
-#' @param sigma scale parameter, scalar
+#' @param sigma scale parameter, scalar.
 #'
 #' @return matrix
 #' @include new_kernel.R

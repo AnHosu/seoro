@@ -7,14 +7,14 @@
 exponential_kernel(l = 1)
 }
 \arguments{
-\item{l}{Length scale. Scalar or numeric vector of length d.}
+\item{l}{Length scale.}
 }
 \value{
-scalar
+matrix
 }
 \description{
-The Radial Basis Function (RBF) kernel on a pair of vectors.
-The RBF kernel is defined as:
+The exponential kernel on a pair of matrices.
+The exponential kernel is defined as:
 \deqn{ k(x1, x2) = e^( -(||x1 - x2|| / l)) }
 }
 \examples{

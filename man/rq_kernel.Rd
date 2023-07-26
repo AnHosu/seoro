@@ -7,15 +7,15 @@
 rq_kernel(l = 1, alpha = 1)
 }
 \arguments{
-\item{l}{Length scale. Scalar or numeric vector of length d.}
+\item{l}{Length scale.}
 
-\item{alpha}{mixture parameter, positive scalar}
+\item{alpha}{mixture parameter, positive scalar.}
 }
 \value{
-scalar
+matrix
 }
 \description{
-The Rational Quadratic (RQ) kernel on a pair of vectors.
+The Rational Quadratic (RQ) kernel on a pair of matrices.
 The RQ kernel is defined as:
 \deqn{ k(x1, x2) = (1 + (||x1 - x2||^2 / (2\alpha l^2)))^(-\alpha) }
 }

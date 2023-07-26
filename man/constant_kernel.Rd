@@ -7,14 +7,14 @@
 constant_kernel(sigma = 1)
 }
 \arguments{
-\item{sigma}{scale parameter, scalar}
+\item{sigma}{scale parameter, scalar.}
 }
 \value{
 matrix
 }
 \description{
-The constant aka the white noise kernel on a pair of vectors.
-The RBF kernel is defined as:
+The constant aka the white noise kernel on a pair of matrices.
+The constant kernel is defined as:
 \deqn{ \sigma^2 }
 }
 \examples{
