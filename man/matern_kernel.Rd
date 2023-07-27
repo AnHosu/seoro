@@ -18,6 +18,6 @@ matrix
 The Matérn kernel on a pair of matrices.
 }
 \examples{
-k <- periodic_kernel(l = 3, nu = 2.5)
+k <- matern_kernel(l = 3, nu = 2.5)
 k(rnorm(4), rnorm(4, 1, 2))
 }

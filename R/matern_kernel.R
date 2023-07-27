@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' k <- periodic_kernel(l = 3, nu = 2.5)
+#' k <- matern_kernel(l = 3, nu = 2.5)
 #' k(rnorm(4), rnorm(4, 1, 2))
 matern_kernel <- new_kernel(
   expr = {
