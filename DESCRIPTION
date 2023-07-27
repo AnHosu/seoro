@@ -19,6 +19,7 @@ Collate:
     'exponential_kernel.R'
     'kernel_math.R'
     'matern_kernel.R'
+    'periodic_kernel.R'
     'rbf_kernel.R'
     'rq_kernel.R'
     'sqdist.R'
