@@ -18,6 +18,7 @@ Collate:
     'constant_kernel.R'
     'exponential_kernel.R'
     'kernel_math.R'
+    'linear_kernel.R'
     'matern_kernel.R'
     'periodic_kernel.R'
     'rbf_kernel.R'
