@@ -21,6 +21,7 @@ Collate:
     'linear_kernel.R'
     'matern_kernel.R'
     'periodic_kernel.R'
+    'polynomial_kernel.R'
     'rbf_kernel.R'
     'rq_kernel.R'
     'sqdist.R'
