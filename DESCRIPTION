@@ -25,3 +25,4 @@ Collate:
     'rbf_kernel.R'
     'rq_kernel.R'
     'sqdist.R'
+    'white_noise_kernel.R'
