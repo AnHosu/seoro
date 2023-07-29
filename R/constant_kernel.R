@@ -1,6 +1,6 @@
 #' Constant Kernel
 #' 
-#' The constant aka the white noise kernel on a pair of matrices.
+#' The constant kernel on a pair of matrices.
 #' The constant kernel is defined as:
 #' \deqn{ \sigma^2 }
 #'
