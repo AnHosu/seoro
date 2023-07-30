@@ -13,3 +13,16 @@ Imports:
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Collate: 
+    'new_kernel.R'
+    'constant_kernel.R'
+    'exponential_kernel.R'
+    'kernel_math.R'
+    'linear_kernel.R'
+    'matern_kernel.R'
+    'periodic_kernel.R'
+    'polynomial_kernel.R'
+    'rbf_kernel.R'
+    'rq_kernel.R'
+    'sqdist.R'
+    'white_noise_kernel.R'

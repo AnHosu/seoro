@@ -7,13 +7,13 @@
 rbf_kernel(l = 1)
 }
 \arguments{
-\item{l}{Length scale. Scalar or numeric vector of length d.}
+\item{l}{Length scale.}
 }
 \value{
-scalar
+matrix
 }
 \description{
-The Radial Basis Function (RBF) kernel on a pair of vectors.
+The Radial Basis Function (RBF) kernel on a pair of matrices.
 The RBF kernel is defined as:
 \deqn{ k(x1, x2) = e^( -0.5(||x1 - x2|| / l)^2) }
 }

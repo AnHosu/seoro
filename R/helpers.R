@@ -1,1 +1,0 @@
-utils::globalVariables(c("x1", "x2"))
