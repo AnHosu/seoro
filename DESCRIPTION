@@ -17,6 +17,7 @@ Collate:
     'new_kernel.R'
     'constant_kernel.R'
     'exponential_kernel.R'
+    'getset_parameters.R'
     'kernel_math.R'
     'linear_kernel.R'
     'matern_kernel.R'

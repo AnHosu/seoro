@@ -2,8 +2,10 @@
 
 S3method("*",seoro_kernel)
 S3method("+",seoro_kernel)
+S3method(get_par,seoro_kernel)
 export(constant_kernel)
 export(exponential_kernel)
+export(get_par)
 export(linear_kernel)
 export(matern_kernel)
 export(new_kernel)
